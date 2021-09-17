@@ -64,11 +64,11 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component           | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Formatting React App|    H     |     8 hrs      |     3 hrs     |    3 hrs    |
-| Working with API    |    H     |     4 hrs      |     6 hrs     |    6 hrs    |
-| Functionality in JS |    H     |     6 hrs      |     4 hrs     |    4 hrs    |
-| Styling with CSS    |    H     |     8 hrs      |     5 hrs     |    5 hrs    |
-| Total               |          |     24 hrs     |     0 hrs     |    18 hrs   |
+| Formatting React App|    H     |     8 hrs      |     6 hrs     |     hrs    |
+| Working with API    |    H     |     4 hrs      |     0 hrs     |     hrs    |
+| Functionality in JS |    H     |     6 hrs      |     0 hrs     |     hrs    |
+| Styling with CSS    |    H     |     8 hrs      |     0 hrs     |     hrs    |
+| Total               |          |     26 hrs     |     0 hrs     |     hrs    |
 
 ## Code Snippet
 
