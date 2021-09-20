@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { fetchItem } from '../services';
+import React from 'react';
+import Card from './Card';
 
 
 export default function Details() {
@@ -25,10 +27,7 @@ export default function Details() {
 
   return (
     <div>
-      <h2>{item.fields.item}</h2>
-      <h3>{item.fields.size}</h3>
-      <h3>{item.fields.season}</h3>
-      <h3>{item.fields.type}</h3>
+      <Card/>
       <div>
       <Link to={`/inventory/${id}`}></Link>
       </div>
