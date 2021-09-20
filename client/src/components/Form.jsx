@@ -29,12 +29,12 @@ export default function Form(props) {
         onChange={(e) => props.setSeason(e.target.value)}
       />
       <br />
-      <label>Style</label>
+      <label>Type</label>
       <input
         type="text"
          // make dropdown menu POST MVP
-        value={props.style}
-        onChange={(e) => props.setStyle(e.target.value)}
+        value={props.type}
+        onChange={(e) => props.setType(e.target.value)}
       />
       <br />
       <button disabled={checkIfDisabled()}>{props.type} item</button>

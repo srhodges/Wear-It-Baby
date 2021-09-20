@@ -1,45 +1,46 @@
-// import { useState } from 'react';
-// import axios from 'axios';
-import { BrowserRouter as Route } from 'react-router-dom';
 import './App.css';
+import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AddInventory from './components/AddInventory.jsx';
 import Details from './components/InventoryDetails.jsx';
 import Inventory from './components/Inventory';
 
+// console.log(process.env.REACT_APP_AIRTABLE_BASE);
+// console.log(process.env.REACT_APP_AIRTABLE_KEY);
+
 function App() {
   return (
     <div className="App">
     <Navbar/>
-    <Route exact path="/">
       <div className="Home">
+    <Route exact path="/">
       {/* <Home /> */}
-      </div>
     </Route>
+      </div>
 
-    <Route path="/inventory">
       <div className="Inventory">
+    <Route exact path="/inventory">
       <Inventory />
-      </div>
     </Route>
+      </div>
 
-    <Route path="/inventory/?:id">
       <div className="Details">
+    <Route exact path="/inventory/:id">
       <Details />
-      </div>
     </Route>
+      </div>
 
-    <Route path="/add">
       <div className="Add">
+    <Route path="/add">
       <AddInventory />
-      </div>
     </Route>
+      </div>
 
-    <Route path="/contact">
       <div className="Contact">
+    <Route path="/contact">
       {/* <ContactForm /> */}
-      </div>
     </Route>
+      </div>
     </div>
   );
 }
