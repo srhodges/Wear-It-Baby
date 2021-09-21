@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { fetchItem } from '../services';
 import React from 'react';
-import Card from './Card';
+
 
 
 export default function Details() {
@@ -27,7 +27,10 @@ export default function Details() {
 
   return (
     <div>
-      <Card/>
+      <h2>{item.fields.item}</h2>
+      <h4>{item.fields.size}</h4>
+      <h4>{item.fields.season}</h4>
+      <h4>{item.fields.type}</h4>
       <div>
       <Link to={`/inventory/${id}`}></Link>
       </div>

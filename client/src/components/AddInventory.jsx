@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useHistory } from 'react-router';
 import Form from './Form';
 
+
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 const URL = `https://api.airtable.com/v0/${airtableBase}/inventory` 
@@ -20,7 +21,7 @@ export default function AddInventory() {
   const [size, setSize] = useState("");
   const [season, setSeason] = useState("");
   const [type, setType] = useState("");
-  // const [image, setImage] = useState("")
+
 
   const history = useHistory();
 
@@ -30,8 +31,7 @@ export default function AddInventory() {
       item,
       size,
       season,
-      type,
-      // image, 
+      type, 
     };
 
     const res = await axios.post(URL, { fields }, config);
