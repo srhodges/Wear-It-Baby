@@ -25,17 +25,18 @@ export default function Inventory() {
   useEffect(() => {
     const getInventory = async () => {
       setItems(await fetchInventory());
-    }; console.log(items);
+    };
     getInventory();
   }, []);
 
   
   return (
-    <div>
+    <div className="inventory">
       <div>
         {items.map((item) => {
           return (
             <Link to={`/inventory/${item.id}`} key={item.id}>
+        <img src={item.fields.image} alt=""/>
         <h3>{item.fields.item}</h3>
         <h4>{item.fields.size}</h4>
         <h4>{item.fields.season}</h4>

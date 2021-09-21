@@ -27,6 +27,7 @@ export default function Details() {
 
   return (
     <div>
+      <img src={item.fields.image} alt=""/>
       <h2>{item.fields.item}</h2>
       <h4>{item.fields.size}</h4>
       <h4>{item.fields.season}</h4>

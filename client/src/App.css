@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 .App {
   text-align: center;
 }
@@ -11,4 +7,25 @@ a {
 }
 .list {
   list-style-type: none;
+}
+
+.btn {
+  background-color: #0af1d3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+.add-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

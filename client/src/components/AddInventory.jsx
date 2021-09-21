@@ -40,7 +40,7 @@ export default function AddInventory() {
   };
 
   return (
-    <div>
+    <div className='add-container'>
       <h3>Send It, Baby!</h3>
       <Form
         item={item}

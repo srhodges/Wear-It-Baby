@@ -26,7 +26,12 @@ export default function Form(props) {
       <label>Season</label>
       <input
         type="text"
-        // make dropdown menu POST MVP
+      // <select>
+      //   <option value="summer">Summer</option>
+      //    <option value="fall">Fall</option>
+      //    <option value="winter">Winter</option>
+      //    <option value="spring">Spring</option>
+      // </select>
         value={props.season}
         onChange={(e) => props.setSeason(e.target.value)}
       />
@@ -39,7 +44,7 @@ export default function Form(props) {
         onChange={(e) => props.setType(e.target.value)}
       />
       <br />
-      <button disabled={checkIfDisabled()}>{props.type} item</button>
+      <button className="btn" disabled={checkIfDisabled()}>Submit</button>
     </form>
   );
 }
