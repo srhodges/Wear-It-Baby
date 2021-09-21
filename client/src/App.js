@@ -28,7 +28,7 @@ function App() {
 
       <div>
     <Route exact path="/inventory/:id">
-      <Card />
+      {/* <Card /> */}
       <Details />
     </Route>
       </div>
