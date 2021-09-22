@@ -7,7 +7,8 @@ export default function Navbar() {
       <nav className="navbar-logo">
       <Link to="/">
         
-      </Link>
+        </Link>
+        
       <ul className="list">
         <li>
           <Link to="/">Home</Link>

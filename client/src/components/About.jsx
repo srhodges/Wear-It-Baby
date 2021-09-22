@@ -6,9 +6,9 @@ function About() {
     <div className="about-container">
 
       <div className="about-content">
-        <h1 className="about-header">
-          {/* <img src=""/> */}
-        </h1>
+        
+          <img className="about-image" src="https://live.staticflickr.com/65535/51485066195_1e6e4531b0_k_d.jpg" />
+       
         <div className="about-text">
 
         <p>
