@@ -26,12 +26,10 @@ export default function Details() {
   }
 
   return (
-    <div>
-      <img src={item.fields.image} alt=""/>
+    <div className="detail-card">
+      <img className="item-image" src={item.fields.URL} alt=""/>
       <h2>{item.fields.item}</h2>
       <h4>{item.fields.size}</h4>
-      <h4>{item.fields.season}</h4>
-      <h4>{item.fields.type}</h4>
       <div>
       <Link to={`/inventory/${id}`}></Link>
       </div>

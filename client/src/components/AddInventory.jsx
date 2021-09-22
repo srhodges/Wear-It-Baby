@@ -41,18 +41,22 @@ export default function AddInventory() {
 
   return (
     <div className='add-container'>
-      <h3>Send It, Baby!</h3>
+      <h3>Send It, Baby!</h3> 
+    
+      <div className="form-container">
       <Form
-        item={item}
-        setItem={setItem}
-        size={size}
-        setSize={setSize}
-        season={season}
-        setSeason={setSeason}
-        type={type}
-        setType={setType}
-        handleSubmit={handleSubmit}
+      item={item}
+      setItem={setItem}
+      size={size}
+      setSize={setSize}
+      season={season}
+      setSeason={setSeason}
+      type={type}
+      setType={setType}
+      handleSubmit={handleSubmit}
       />
-    </div>
+      </div>
+  </div>
+  
   );
 }

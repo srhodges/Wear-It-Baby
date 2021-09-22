@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchInventory } from '../services/index';
-// import Card from "./Card";
+import Card from "./Card";
 
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -32,19 +32,15 @@ export default function Inventory() {
   
   return (
     <div className="inventory">
-      <div>
+      {/* <div>
+      <h1>Wear It, Baby!</h1>
+      </div> */}
+     
         {items.map((item) => {
           return (
-            <Link to={`/inventory/${item.id}`} key={item.id}>
-        <img src={item.fields.image} alt=""/>
-        <h3>{item.fields.item}</h3>
-        <h4>{item.fields.size}</h4>
-        <h4>{item.fields.season}</h4>
-        <h4>{item.fields.type}</h4>
-      </Link>
+            <Card item={item}/>
           );
         })}
-      </div>
     </div>
   );
 }

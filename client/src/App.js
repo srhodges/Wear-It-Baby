@@ -6,7 +6,8 @@ import AddInventory from './components/AddInventory.jsx';
 import Details from './components/InventoryDetails.jsx';
 import Inventory from './components/Inventory';
 import Contact from './components/Contact';
-// import Card from './components/Card';
+import Home from './Home';
+import Footer from './components/Footer';
 
 
 
@@ -17,7 +18,7 @@ function App() {
     <Navbar/>
       <div>
     <Route exact path="/">
-      {/* <Home /> */}
+      <Home />
     </Route>
       </div>
 
@@ -45,7 +46,16 @@ function App() {
       <Contact />
     </Route>
       </div>
-    </div>
+
+      {/* <div >
+    <Route path="/about">
+      <About />
+    </Route>
+      </div> */}
+
+      <Footer />
+      </div>
+  
   );
 }
 

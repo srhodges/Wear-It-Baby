@@ -7,37 +7,32 @@ export default function Form(props) {
 
   return (
     <form onSubmit={props.handleSubmit}>
-      <label>Item</label>
       <input
+        autoFocus
+        placeholder="item"
         type="text"
          // make dropdown menu POST MVP
         value={props.item}
         onChange={(e) => props.setItem(e.target.value)}
       />
       <br />
-      <label>Size</label>
       <input
+        placeholder="size"
         type="text"
          // make dropdown menu POST MVP
         value={props.size}
         onChange={(e) => props.setSize(e.target.value)}
       />
       <br />
-      <label>Season</label>
       <input
+        placeholder="season"
         type="text"
-      // <select>
-      //   <option value="summer">Summer</option>
-      //    <option value="fall">Fall</option>
-      //    <option value="winter">Winter</option>
-      //    <option value="spring">Spring</option>
-      // </select>
         value={props.season}
         onChange={(e) => props.setSeason(e.target.value)}
       />
       <br />
-      <label>Type</label>
       <input
+        placeholder="type"
         type="text"
          // make dropdown menu POST MVP
         value={props.type}

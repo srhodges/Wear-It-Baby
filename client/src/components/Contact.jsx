@@ -19,9 +19,9 @@ export default function Contact() {
   
   const postSubmission = async () => {
     const formInfo = {
-      name:"Hard Coded",
-      email:"hardcode@hotmail.com",
-      message:"Can hard code..",
+      name: name,
+      email:email,
+      message:message,
     };
   
 
@@ -45,11 +45,11 @@ export default function Contact() {
         <div className="form-box">
         <form onSubmit={submitForm}>
           <label>Name</label>
-          <input type="text" value={name} />
+          <input onChange={(e) => { setName(e.target.value) }} type="text" value={name} />
           <label>Email</label>
-          <input type="text" value={email} />
+          <input  onChange={(e) => { setEmail(e.target.value) }}type="text" value={email} />
           <label>Message</label>
-          <input type="text" value={message}/>
+          <input  onChange={(e) => { setMessage(e.target.value) }}type="text" value={message}/>
           
         <button className="btn">
           Send It!

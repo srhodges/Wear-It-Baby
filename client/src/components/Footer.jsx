@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+function Footer() {
   return (
-<div className="navbar">
-      <nav className="navbar-logo">
+       <div className="footer-bar">
       <Link to="/">
         
       </Link>
@@ -22,9 +21,8 @@ export default function Navbar() {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-    </nav>
-</div>
-  );
+    </div>
+  )
 }
 
-
+export default Footer
