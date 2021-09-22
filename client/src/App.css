@@ -5,7 +5,7 @@
 
 .navbar {
   background-color: rgb(44, 201, 201);
-  width: ;
+  justify-content: center;
   border-radius: 10%;
   font-size: 30px;
   font-weight: bold;
@@ -14,7 +14,6 @@
 }
 .footer-bar {
   background-color: rgb(44, 201, 201);
-  width: ;
   border-radius: 10%;
   font-size: 30px;
   font-weight: bold;
@@ -33,6 +32,15 @@
 }
 
 input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.5%;
+}
+
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -63,6 +71,7 @@ a:visited {
   border: none;
   color: white;
   padding: 15px 32px;
+  margin: 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -109,6 +118,15 @@ a:visited {
   box-shadow: 0px 0px 15px 0px;
 }
 
+.inventory-title {
+  display: flex;
+  flex-direction: column;
+  color: rgb(245, 192, 58);
+  background-color: rgb(91, 80, 122);
+  border: rgb(91, 80, 122);
+  border-radius: 5%;
+}
+
 .detail-card {
   width: center;
   height: center;
@@ -116,6 +134,11 @@ a:visited {
   border: 0.5px solid rgb(91, 80, 122);
   border-radius: 1%;
   text-decoration: none;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .add-container {
@@ -152,18 +175,32 @@ a:visited {
 }
 
 .title-box {
-  width: center;
-  height: center;
+  width: center 300px;
+  height: center 300px;
   color: rgb(44, 201, 201);
   margin: 20px 0;
-  border: 0.5px solid rgb(44, 201, 201);
 }
 .form-box {
+  align-items: center;
+  background-color: rgb(44, 201, 201);
+  font-weight: bolder;
   display: flex;
   flex-direction: inherit;
-  width: center;
-  height: 300px;
+  width: center 300px;
+  height: center 300px;
   color: rgb(44, 201, 201);
-  margin: 100px 0;
-  border: 0.5px solid rgb(44, 201, 201);
+  margin: 0px 50px 50px 50px;
+  border: 0.5px solid rgb(245, 192, 58);
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.about-text {
+  font-weight: bolder;
+  font-size: x-large;
 }

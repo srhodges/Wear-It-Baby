@@ -6,8 +6,9 @@ import AddInventory from './components/AddInventory.jsx';
 import Details from './components/InventoryDetails.jsx';
 import Inventory from './components/Inventory';
 import Contact from './components/Contact';
-import Home from './Home';
+import Home from './components/Home';
 import Footer from './components/Footer';
+import About from './components/About';
 
 
 
@@ -47,11 +48,11 @@ function App() {
     </Route>
       </div>
 
-      {/* <div >
+      <div >
     <Route path="/about">
       <About />
     </Route>
-      </div> */}
+      </div>
 
       <Footer />
       </div>

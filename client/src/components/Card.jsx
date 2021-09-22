@@ -13,10 +13,10 @@ function Card(props) {
     <div className="item-card">
           <Link to={`/inventory/${item.id}`} key={item.id}>
             <img className="item-image" src={item.fields.URL} alt=""/>
-            {/* <h3>{item.fields.item}</h3>
-            <h4>{item.fields.size}</h4>
-            <h4>{item.fields.season}</h4>
-            <h4>{item.fields.type}</h4> */}
+            {/* <h3>{item.fields.item}</h3> */}
+            {/* <h4>{item.fields.size}</h4> */}
+            {/* <h4>{item.fields.season}</h4> */}
+            {/* <h4>{item.fields.type}</h4> */}
           </Link>
     </div >
   ) 

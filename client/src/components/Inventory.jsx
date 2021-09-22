@@ -31,16 +31,17 @@ export default function Inventory() {
 
   
   return (
+    <div className="inventory-container">
+       <h1 className="inventory-title">Wear It, Baby!</h1>
+
     <div className="inventory">
-      {/* <div>
-      <h1>Wear It, Baby!</h1>
-      </div> */}
      
         {items.map((item) => {
           return (
             <Card item={item}/>
-          );
-        })}
+            );
+          })}
     </div>
+          </div>
   );
 }

@@ -43,7 +43,7 @@ export default function Contact() {
       </h1>
       </div>
         <div className="form-box">
-        <form onSubmit={submitForm}>
+        <form onSubmit={submitForm} className="form-text">
           <label>Name</label>
           <input onChange={(e) => { setName(e.target.value) }} type="text" value={name} />
           <label>Email</label>

@@ -17,9 +17,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="/add">Add</Link>
-        </li>
+          </li>
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+          <li>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
