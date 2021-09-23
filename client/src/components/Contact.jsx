@@ -49,7 +49,7 @@ export default function Contact() {
           <label>Email</label>
           <input  onChange={(e) => { setEmail(e.target.value) }}type="text" value={email} />
           <label>Message</label>
-          <input  onChange={(e) => { setMessage(e.target.value) }}type="text" value={message}/>
+          <textarea  onChange={(e) => { setMessage(e.target.value) }}type="text" value={message}/>
           
         <button className="btn">
           Send It!

@@ -6,9 +6,7 @@ function About() {
     <div className="about-container">
 
       <div className="about-content">
-        
           <img className="about-image" src="https://live.staticflickr.com/65535/51485066195_1e6e4531b0_k_d.jpg" />
-       
         <div className="about-text">
 
         <p>

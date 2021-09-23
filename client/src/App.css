@@ -37,7 +37,16 @@ input[type="text"] {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-radius: 0.5%;
+  border-radius: 1.5%;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 1.5%;
 }
 
 select {
@@ -185,8 +194,8 @@ a:visited {
   background-color: rgb(44, 201, 201);
   font-weight: bolder;
   display: flex;
-  flex-direction: inherit;
-  width: center 300px;
+  flex-direction: column;
+  width: center;
   height: center 300px;
   color: rgb(44, 201, 201);
   margin: 0px 50px 50px 50px;

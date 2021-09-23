@@ -31,7 +31,6 @@ function App() {
 
       <div>
     <Route exact path="/inventory/:id">
-      {/* <Card /> */}
       <Details />
     </Route>
       </div>

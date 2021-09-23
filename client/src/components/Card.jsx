@@ -1,10 +1,7 @@
 import React from 'react'
-import { fetchInventory } from '../services/index';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-  const [items, setItems] = useState([]);
   const { item } = props;
   
 
