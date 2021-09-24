@@ -9,19 +9,19 @@ function Footer() {
       </Link>
       <ul className="list">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/"><i className="fas fa-home"/></Link>
         </li>
         <li>
-          <Link to="/inventory">Inventory</Link>
+          <Link to="/inventory"><i className="fas fa-tshirt"/></Link>
         </li>
         <li>
-          <Link to="/add">Add</Link>
+          <Link to="/add"><i className="fas fa-plus"/></Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact"><i className="fas fa-handshake"/></Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about"><i className="fas fa-question"/></Link>
         </li>
       </ul>
     </div>

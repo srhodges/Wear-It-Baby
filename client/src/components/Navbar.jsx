@@ -31,8 +31,32 @@ export default function Navbar() {
             <Link to="/about">About</Link>
           </li>
         </ul>
-        {/* <input type="text" placeholder="Search Wear It, Baby!" onChange={e => {setSearch(e.target.value)} }/> */}
+         {/* <input type="text" placeholder="Search Wear It, Baby!" onChange={e => {setSearch(e.target.value)} }/> */}
       </nav>
     </div>
   )
 }
+
+//  {searchResults.filter((val, key) => {
+//           return (
+//             <div>
+//               <img src={val.image} />
+//               <h2>
+//                 {val.item}
+//               </h2>
+//               <h2>
+//                 {val.size}
+//               </h2>
+//               <h2>
+//                 {val.season}
+//               </h2>
+//               <h2>
+//                 {val.type}
+//               </h2>
+//             </div>
+//           );
+//         }
+// )
+// }
+//         set state for search bar
+//           using hooks

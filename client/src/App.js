@@ -16,8 +16,9 @@ function App() {
 
   return (
     <div className="App">
-    <Navbar/>
+      <Navbar />
       <div>
+        
     <Route exact path="/">
       <Home />
     </Route>
