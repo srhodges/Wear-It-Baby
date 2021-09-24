@@ -34,7 +34,7 @@ function SearchInventory(props) {
 
     
   return (
-      <div>
+    <div>
       
       <div>
         {results.map((result => {
