@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+// import ReactPaginate from "react-paginate";
 import { fetchInventory } from '../services/index';
 import Card from "./Card";
 
@@ -37,6 +38,7 @@ export default function Inventory() {
      
         {items.map((item) => {
           return (
+            // <ReactPaginate/>
             <Card item={item}/>
             );
           })}
