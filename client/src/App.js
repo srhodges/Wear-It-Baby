@@ -56,7 +56,7 @@ function App() {
       </div>
 
       <div>
-      <Route path="/inventoryresults">
+      <Route path="/results">
       <InventoryResults />
     </Route>
       </div>
