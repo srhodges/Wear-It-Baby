@@ -22,6 +22,9 @@ export default function Navbar() {
             <Link to="/inventory">Inventory</Link>
           </li>
           <li>
+            <Link to="/inventoryresults">Search</Link>
+          </li>
+          <li>
             <Link to="/add">Add</Link>
           </li>
           <li>
@@ -29,9 +32,6 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/inventoryresults">Search</Link>
           </li>
         </ul>
       </nav>
