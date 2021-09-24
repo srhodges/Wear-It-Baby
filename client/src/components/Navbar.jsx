@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-// import { useState } from 'react';
-// import Inventory from './Inventory';
+import { useState } from 'react';
+// import InventoryResults from './InventoryResults';
+
 
 export default function Navbar() {
 
-  // const [search, setSearch] = useState("")
-  // const searchResults = { Inventory }
+  const [search, setSearch] = useState("");
 
 
   return (
@@ -30,33 +30,12 @@ export default function Navbar() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/inventoryresults">Search</Link>
+          </li>
         </ul>
-         {/* <input type="text" placeholder="Search Wear It, Baby!" onChange={e => {setSearch(e.target.value)} }/> */}
       </nav>
     </div>
   )
 }
 
-//  {searchResults.filter((val, key) => {
-//           return (
-//             <div>
-//               <img src={val.image} />
-//               <h2>
-//                 {val.item}
-//               </h2>
-//               <h2>
-//                 {val.size}
-//               </h2>
-//               <h2>
-//                 {val.season}
-//               </h2>
-//               <h2>
-//                 {val.type}
-//               </h2>
-//             </div>
-//           );
-//         }
-// )
-// }
-//         set state for search bar
-//           using hooks

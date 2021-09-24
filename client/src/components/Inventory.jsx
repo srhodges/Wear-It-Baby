@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 // import ReactPaginate from "react-paginate";
 import { fetchInventory } from '../services/index';
 import Card from "./Card";
+import SearchInventory from "./SearchInventory";
 
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -20,6 +21,7 @@ const config = {
 
 export default function Inventory() {
   const [items, setItems] = useState([]);
+  const [search, setSearch] = useState("")
 
 
   useEffect(() => {
@@ -32,6 +34,13 @@ export default function Inventory() {
   
   return (
     <div className="inventory-container">
+    {/* <div className="inventory-results">
+      <input type="text" placeholder="Search Wear It, Baby!" onChange={e => setSearch(e.target.value)} />
+
+      <button className="search-button"> Search</button>
+      <SearchInventory search={search}/>
+
+            </div> */}
        <h1 className="inventory-title">Wear It, Baby!</h1>
 
     <div className="inventory">
@@ -46,3 +55,13 @@ export default function Inventory() {
           </div>
   );
 }
+
+
+
+
+
+
+  
+  
+          
+        

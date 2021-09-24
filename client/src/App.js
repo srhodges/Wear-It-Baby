@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import About from './components/About';
+import InventoryResults from './components/InventoryResults';
 
 
 
@@ -51,6 +52,12 @@ function App() {
       <div >
     <Route path="/about">
       <About />
+    </Route>
+      </div>
+
+      <div>
+      <Route path="/inventoryresults">
+      <InventoryResults />
     </Route>
       </div>
 

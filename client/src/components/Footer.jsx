@@ -23,6 +23,9 @@ function Footer() {
         <li>
           <Link to="/about"><i className="fas fa-question"/></Link>
         </li>
+        <li>
+            <Link to="/inventoryresults"><i className="fas fa-search"/></Link>
+          </li>
       </ul>
     </div>
   )
