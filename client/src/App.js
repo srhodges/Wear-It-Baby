@@ -18,49 +18,54 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div>
+      <div className="layout">
+      {/* <div> */}
         
-    <Route exact path="/">
+        
+        <Route exact path="/">
+          <div className="home">
       <Home />
+          </div>
     </Route>
-      </div>
+      {/* </div> */}
 
-      <div >
+      {/* <div > */}
     <Route exact path="/inventory">
       <Inventory />
     </Route>
-      </div>
+      {/* </div> */}
 
-      <div>
     <Route exact path="/inventory/:id">
+      <div className="details-container">
       <Details />
-    </Route>
       </div>
+    </Route>
 
-      <div >
+      {/* <div > */}
     <Route path="/add">
       <AddInventory />
     </Route>
-      </div>
+      {/* </div> */}
 
-      <div >
+      {/* <div > */}
     <Route path="/contact">
       <Contact />
     </Route>
-      </div>
+      {/* </div> */}
 
-      <div >
+      {/* <div > */}
     <Route path="/about">
       <About />
     </Route>
-      </div>
+      {/* </div> */}
 
-      <div>
-      <Route path="/inventoryresults">
+      {/* <div> */}
+      <Route exact path="/inventoryresults">
       <InventoryResults />
     </Route>
-      </div>
-
+      {/* </div> */}
+</div>
+    
       <Footer />
       </div>
   

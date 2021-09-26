@@ -15,6 +15,9 @@ function Footer() {
           <Link to="/inventory"><i className="fas fa-tshirt"/></Link>
         </li>
         <li>
+            <Link to="/inventoryresults"><i className="fas fa-search"/></Link>
+          </li>
+        <li>
           <Link to="/add"><i className="fas fa-plus"/></Link>
         </li>
         <li>
@@ -23,9 +26,6 @@ function Footer() {
         <li>
           <Link to="/about"><i className="fas fa-question"/></Link>
         </li>
-        <li>
-            <Link to="/inventoryresults"><i className="fas fa-search"/></Link>
-          </li>
       </ul>
     </div>
   )

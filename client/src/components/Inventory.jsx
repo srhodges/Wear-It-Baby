@@ -34,19 +34,14 @@ export default function Inventory() {
   
   return (
     <div className="inventory-container">
-    {/* <div className="inventory-results">
-      <input type="text" placeholder="Search Wear It, Baby!" onChange={e => setSearch(e.target.value)} />
-
-      <button className="search-button"> Search</button>
-      <SearchInventory search={search}/>
-
-            </div> */}
+      <div className="inventory-header">
        <h1 className="inventory-title">Wear It, Baby!</h1>
+      </div>
 
     <div className="inventory">
      
         {items.map((item) => {
-          return (
+          return ( 
             // <ReactPaginate/>
             <Card item={item}/>
             );

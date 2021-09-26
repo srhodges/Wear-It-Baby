@@ -1,6 +1,11 @@
 .App {
   text-align: center;
   font-family: "Amatic SC", cursive;
+  height: 100%;
+}
+
+.layout {
+  min-height: calc(100vh - 235px);
 }
 
 .navbar {
@@ -21,14 +26,29 @@
   margin: 40px 0px 40px 0px;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: calc(100vh - 235px);
+}
+
 .homepage-image {
   width: 75%;
-  height: 50%;
+  /* height: 50%; */
 }
+
 .homepage {
   border: 30px solid rgb(44, 201, 201);
   border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   padding: 15px 20px 15px 20px;
+  height: 100%;
+  /* min-height: calc(100vh-235px); */
 }
 
 input[type="text"] {
@@ -47,15 +67,6 @@ textarea {
   box-sizing: border-box;
   border: none;
   border-radius: 1.5%;
-}
-
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 0.5%;
 }
 
 label {
@@ -87,22 +98,39 @@ a:visited {
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
 }
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.5%;
+}
+
+.inventory-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(91, 80, 122);
+  border: rgb(91, 80, 122);
+}
+
 .inventory-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .inventory-title {
-  display: flex;
+  padding-top: 20px;
   align-items: center;
   flex-direction: column;
   color: rgb(245, 192, 58);
-  background-color: rgb(91, 80, 122);
-  border: rgb(91, 80, 122);
   border-radius: 5%;
   width: 100%;
-  height: 150px;
-  font-size: 90px;
+  font-size: 150px;
 }
 
 .inventory {
@@ -139,10 +167,17 @@ a:visited {
   max-height: 300px;
 }
 
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 65vh;
+}
+
 .detail-card {
-  width: center;
-  height: center;
-  margin: 20px 0;
+  width: 70%;
+  /* margin: 20px 0; */
   border: 0.5px solid rgb(91, 80, 122);
   border-radius: 1%;
   text-decoration: none;
@@ -234,8 +269,40 @@ a:visited {
   padding: 0px 0px 50px 0px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    display: flex;
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: large;
+    margin: 0px 0px 0px 0px;
+  }
+  .inventory-title {
+    font-size: 30px;
+    height: 50px;
+  }
+  .about-content {
+    font-size: small;
+  }
+  .about-image {
+    height: 300px;
+    width: 350px;
+  }
+  .item-card {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 70px 0;
+    border: 2px solid rgb(91, 80, 122);
+    border-radius: 5%;
+    text-decoration: none;
+  }
+
+  .item-image {
+    width: 100px;
+    max-width: 100px;
+    max-height: 150px;
+  }
+
+  i {
+    font-size: 20px;
+    align-items: stretch;
   }
 }
