@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="layout">
-      {/* <div> */}
+      
         
         
         <Route exact path="/">
@@ -27,13 +27,13 @@ function App() {
       <Home />
           </div>
     </Route>
-      {/* </div> */}
+      
 
-      {/* <div > */}
+      
     <Route exact path="/inventory">
       <Inventory />
     </Route>
-      {/* </div> */}
+      
 
     <Route exact path="/inventory/:id">
       <div className="details-container">
@@ -41,29 +41,29 @@ function App() {
       </div>
     </Route>
 
-      {/* <div > */}
+      
     <Route path="/add">
       <AddInventory />
     </Route>
-      {/* </div> */}
+      
 
-      {/* <div > */}
+      
     <Route path="/contact">
       <Contact />
     </Route>
-      {/* </div> */}
+      
 
-      {/* <div > */}
+      
     <Route path="/about">
       <About />
     </Route>
-      {/* </div> */}
+      
 
-      {/* <div> */}
+     
       <Route exact path="/inventoryresults">
       <InventoryResults />
     </Route>
-      {/* </div> */}
+    
 </div>
     
       <Footer />

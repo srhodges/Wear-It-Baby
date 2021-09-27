@@ -49,45 +49,58 @@ function SearchInventory(props) {
         }
         
       </div>
-       <div>
-       {results.map((result => {
-         if (result.fields.size === props.search) {
-           return (
-             <div><Card item={result}/></div>
-             );
+  <div>
+      {results.map((result => {
+        if (result.fields.size === props.search) {
+          return (
+            <div><Card item={result}/></div>
+          );
             }
           }
           
           ))
         }
-       
+
       </div>
       <div>
-       {results.map((result => {
-         if (result.fields.season === props.search) {
-           return (
-             <div><Card item={result}/></div>
-             );
+      {results.map((result => {
+        if (result.fields.season === props.search) {
+          return (
+            <div><Card item={result}/></div>
+            );
             }
           }
           
           ))
         }
-       
+    
       </div>
       <div>
-       {results.map((result => {
-         if (result.fields.type === props.search) {
-           return (
-             <div><Card item={result}/></div>
-             );
+      {results.map((result => {
+        if (result.fields.type === props.search) {
+          return (
+            <div><Card item={result}/></div>
+            );
             }
           }
           
           ))
         }
-       
-   </div>
+      
+      </div>
+      <div>
+      {results.map((result => {
+        if (result.fields.gender === props.search) {
+          return (
+            <div><Card item={result}/></div>
+            );
+            }
+          }
+          
+          ))
+        }
+      
+  </div>
         </div>
   )
 };

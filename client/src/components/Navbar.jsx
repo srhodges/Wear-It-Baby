@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { useState } from 'react';
-// import InventoryResults from './InventoryResults';
 
 
 export default function Navbar() {

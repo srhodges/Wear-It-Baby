@@ -1,9 +1,8 @@
 import React from 'react'
-import { Card } from './Card'
 import { useState } from 'react';
 import SearchInventory from './SearchInventory';
 
-function InventoryResults(props) {
+function InventoryResults() {
 
   const [search, setSearch] = useState("")
   
@@ -23,7 +22,7 @@ function InventoryResults(props) {
           - outfit
           - shirt
           - pants
-          - sleeper
+          - pajamas
           - dress/romper
           - suit
           - jacket/suit
@@ -65,7 +64,16 @@ function InventoryResults(props) {
           <p>
           - Formal
           - Travel
+          - Swimwear
+          - Sleep
           - Essential -
+        </p>
+        <h3 className="search-text">
+        Search by gender:
+          </h3>
+          <p>
+          - Boy
+          - Girl -
         </p>
     </div>
     <div className="inventory-results">

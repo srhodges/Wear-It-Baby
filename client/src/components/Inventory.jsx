@@ -1,9 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-// import ReactPaginate from "react-paginate";
 import { fetchInventory } from '../services/index';
 import Card from "./Card";
-import SearchInventory from "./SearchInventory";
+
 
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -21,7 +20,7 @@ const config = {
 
 export default function Inventory() {
   const [items, setItems] = useState([]);
-  const [search, setSearch] = useState("")
+  
 
 
   useEffect(() => {
@@ -42,7 +41,6 @@ export default function Inventory() {
      
         {items.map((item) => {
           return ( 
-            // <ReactPaginate/>
             <Card item={item}/>
             );
           })}
