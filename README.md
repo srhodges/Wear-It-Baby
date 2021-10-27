@@ -13,17 +13,15 @@ https://wearitbaby.netlify.app/
 
 https://whimsical.com/wear-it-baby-4vWbSZPj72kv8pCWaj1MXZ
 
-### MVP/PostMVP
+<br>
 
-> The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
-#### MVP
+## MVP
 
 - Successfully create and render external api
 - Successfully allow user to add items 
 - Successfully route to all pages
 
-#### PostMVP Completed
+## PostMVP Completed
 
 - Allow uers to upload image to api/application 
 - Create functional contact form
@@ -94,3 +92,23 @@ export default function Inventory() {
 }
 
 ```
+<br>
+
+## SWOT Analysis
+
+### Strengths:
+
+Understanding of external API's.
+
+### Weaknesses:
+
+Styling with CSS, understanding flexbox vs grid and when to use them.
+
+### Opportunities:
+
+Gaining js and react knowledge of the basics of retail/product sites. 
+
+### Threats:
+
+Time!
+
